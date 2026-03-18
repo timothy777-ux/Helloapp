@@ -7,7 +7,7 @@ public class HelloApp{
         if (args.length > 0) {
             name = args[0];
         } else {
-            name = "TIMOTHY ";
+            name = "TIMOTHY S";
         }
 
         System.out.println("Hello, " + name + "!");
