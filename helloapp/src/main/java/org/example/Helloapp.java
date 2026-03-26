@@ -13,7 +13,7 @@ public class Helloapp {
             }
         } else {
             // Default message if no arguments
-            System.out.println("Hello World");
+            System.out.println("Hello World!");
         }
     }
 }
