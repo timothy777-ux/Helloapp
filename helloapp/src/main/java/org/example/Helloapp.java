@@ -1,15 +1,19 @@
 public class Helloapp {
+        public static void main(String[] args) {
 
-    public static void main(String[] args) {
+            if (args.length > 0) {
+                String names = "";
 
-        // If no command-line arguments, print default message
-        if (args.length == 0) {
-            System.out.println("Hello");
-        } else {
-            // Use enhanced for loop to print Hello with each argument
-            for (String arg : args) {
-                System.out.println("Hello " + arg);
+                for (String name : args) {
+                    names += name + ", ";
+                }
+
+
+                names = names.substring(0, names.length() - 2);
+
+                System.out.println("Hello, " + names + "!");
+            } else {
+                System.out.println("Hello, World!");
             }
         }
     }
-}
